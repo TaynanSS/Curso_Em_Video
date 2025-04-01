@@ -1,0 +1,10 @@
+ent = input('Digite algo: ')
+print('O tipo primitivo desse valor é ', type(ent))
+print('Só tem espaços? ', ent.isspace())
+print('É um número? ', ent.isnumeric())
+print('É alfabético? ', ent.isalpha())
+print('É alfanumérico? ', ent.isalnum())
+print('Está em maiúsculas? ', ent.isupper())
+print('Está em minúsculas? ', ent.islower())
+print('Está capitalizada? ', ent.istitle())
+
