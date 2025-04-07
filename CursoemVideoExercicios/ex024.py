@@ -1,7 +1,7 @@
 # Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome 'SANTO'.
 
-nome = input('Digite um nome de uma cidade: ')
+nome = str(input('Digite um nome de uma cidade: ')).strip().split()
 
-comeca = nome.split()
+#comeca = nome.split()
 
-print('Santo' in comeca[0])
+print(nome[0].lower() == 'santo')
