@@ -3,11 +3,11 @@
 # - Em que posição ela aparece a primeira vez.
 # - Em que posição ela aparece a última vez.
 
-entrada = input('Digite uma frase: ')
+entrada = str(input('Digite uma frase: ')).strip().lower()
 
 quantidade = entrada.count('a')
-primeira = entrada.find('a')
-ultima = entrada.rfind('a')
+primeira = entrada.find('a') + 1
+ultima = entrada.rfind('a') + 1
 
 
 print('Quantas vezes aparece: {}\n'
@@ -15,4 +15,4 @@ print('Quantas vezes aparece: {}\n'
       'Qual posição aparece na última vez: {}'.format(quantidade, primeira, ultima))
 
 #'Qual posição aparece na 1° vez: {}\n'
- #     'Qual posição aparece na última vez: {}'
+ #'Qual posição aparece na última vez: {}'
