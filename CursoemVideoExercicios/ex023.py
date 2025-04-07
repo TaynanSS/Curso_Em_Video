@@ -1,19 +1,20 @@
-# Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
-#Ex: Digite um número: 1834
-# Unidade: 4
+# Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos digitos separaddos.
+#ex: digite um número: 1834
+# unidade: 4
 # dezena: 3
 # centena: 8
 # milhar: 1
 
-num = str(input('Digite um número de 0 a 9999: ')).zfill(4) # Na própria entrada do usuário irá garantir que sempre haja 4 caracteres, preenchendo com zeros à esquerda.
+num = str(input('Digite número do 0 a 9990: ')).strip().zfill(4) # Na própria entrada do usuário irá garantir que sempre haja 4 caracteres, preenchendo com zeros à esquerda.
+
+#num_str = str(num)
 
 unidade = num[3]
 dezena = num[2]
 centena = num[1]
 milhar = num[0]
 
-
-print('Unidade: {}\n'
+print('unidade: {}\n'
       'Dezena: {}\n'
       'Centena: {}\n'
       'Milhar: {}'.format(unidade, dezena, centena, milhar))
@@ -30,6 +31,8 @@ unidade = num_str[3]
 dezena = num_str[2]
 centena = num_str[1]
 milhar = num_str[0]
+
+
 
 print('Unidade: {}\n'
       'Dezena: {}\n'
