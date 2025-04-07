@@ -5,11 +5,7 @@
 # primeiro = Ana
 # último = Souza
 
-nome = input('Escreva seu nome completo: ')
+nome = str(input('Escreva seu nome completo: ')).strip().split()
 
-primeiro = nome.split()
-ultimo = nome.split()
-
-
-print('Primeiro: {}\n'
-      'Último: {}'.format(primeiro[0], ultimo[-1]))
+print('Primeiro nome: {}\n'
+      'Último nome: {}'.format(nome[0], nome[-1]))
