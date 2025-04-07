@@ -5,7 +5,7 @@
 # centena: 8
 # milhar: 1
 
-num = str(input('Digite um número de 0 a 9999: ')).zfill(4)
+num = str(input('Digite um número de 0 a 9999: ')).zfill(4) # Na própria entrada do usuário irá garantir que sempre haja 4 caracteres, preenchendo com zeros à esquerda.
 
 unidade = num[3]
 dezena = num[2]
