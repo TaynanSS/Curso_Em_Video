@@ -9,3 +9,8 @@ nome = str(input('Escreva seu nome completo: ')).strip().split()
 
 print('Primeiro nome: {}\n'
       'Último nome: {}'.format(nome[0], nome[-1]))
+
+# OUTRA FORMA
+
+print('Primeiro nome: {}\n'
+      'Último nome: {}'.format(nome[0], nome[len(nome)-1]))
