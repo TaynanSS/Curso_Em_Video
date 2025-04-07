@@ -5,7 +5,7 @@
 # centena: 8
 # milhar: 1
 
-num = str(input('Digite um número de 0 a 9999: '))
+num = str(input('Digite um número de 0 a 9999: ')).zfill(4)
 
 unidade = num[3]
 dezena = num[2]
@@ -19,7 +19,7 @@ print('Unidade: {}\n'
       'Milhar: {}'.format(unidade, dezena, centena, milhar))
 
 # Se for como INT?
-
+'''
 num = int(input('Digite um número de 0 a 9999: '))
 
 num_str = str(num)
@@ -35,3 +35,4 @@ print('Unidade: {}\n'
       'Dezena: {}\n'
       'Centena: {}\n'
       'Milhar: {}'.format(unidade, dezena, centena, milhar))
+'''
