@@ -6,8 +6,7 @@ if num.isalpha():
     print('Não foi digitado um número. Por favor digite um número inteiro.')
 else:
     num = int(num)
-    par = num % 2
-    if par == 0:
+    if num % 2 == 0:
         print('O número digitado é par')
     else:
-        print('O número digitado é impar')
+        print('O número digitado é ímpar')
