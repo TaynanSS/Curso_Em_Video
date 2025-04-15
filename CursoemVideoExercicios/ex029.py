@@ -10,8 +10,8 @@ else:
     carro = float(carro)
     if carro > 80:
         multa = (carro - 80) * 7
-        print('Você foi multado!')
-        print('Valor da multa: R${:.2f}'.format(multa))
+        print('Você foi multado! Excedeu o limite permitido de 80km/h')
+        print(f'Valor da multa: R${multa:.2f}')
     else:
         if carro == 80:
             print('Você está no limite de velocidade!')
@@ -21,7 +21,5 @@ else:
             else:
                 if carro == 0:
                     print('Você está parado!')
-                else:
-                    print('Você está abaixo do limite de velocidade.')
 
-
+print('Você está abaixo do limite de velocidade. Dirija com cuidado!')
