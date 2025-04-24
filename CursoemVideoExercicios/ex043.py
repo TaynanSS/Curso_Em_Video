@@ -21,5 +21,7 @@ elif imc >= 18.5 and imc < 25:
     print(f'Peso: {peso:.2f}\nAltura: {altura:.2f}\nIMC: {imc:.2f}\nStatus: \033[1mPeso Ideal\033[m')
 elif imc >= 25 and imc < 30:
     print(f'Peso: {peso:.2f}\nAltura: {altura:.2f}\nIMC: {imc:.2f}\nStatus: \033[1mSobrepeso\033[m')
+elif imc >= 30 and imc <40:
+    print(f'Peso: {peso:.2f}\nAltura: {altura:.2f}\nIMC: {imc:.2f}\nStatus: \033[1mObesidade\033[m')
 else:
     print(f'Peso: {peso:.2f}\nAltura: {altura:.2f}\nIMC: {imc:.2f}\nStatus: \033[1mObesidade Mórbida\033[m')
