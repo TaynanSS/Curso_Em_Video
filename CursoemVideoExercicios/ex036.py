@@ -8,20 +8,18 @@ casa = float(input('Insira o valor da casa: '))
 salario = float(input('Insira o valor do salário: '))
 anos = int(input('Em quantos anos deseja pagar: '))
 
-meses = anos * 12
+meses = casa / (anos * 12)
 
-if casa / meses > salario * (30/100):
-    prestacao = casa / meses
+if meses > salario * (30/100):
     print('-=-' * 18)
-    print(f'Valor da prestação: {prestacao:.2f}\n'
+    print(f'Valor da prestação: {meses:.2f}\n'
           f'Valor do salário: {salario:.2f}\n'
           f'O valor da prestação excedeu 30% do seu salário: {salario * (30/100)}\n'
           f'Seu empréstimo foi negado.')
     print('-=-' * 18)
 else:
-    prestacao = casa / meses
     print('-=-' * 18)
-    print(f'Valor da prestação: {prestacao:.2f}\n'
+    print(f'Valor da prestação: {meses:.2f}\n'
           f'Valor do salário: {salario:.2f}\n'
           f'O valor da prestação abaixo de 30% do seu salário: {salario * (30 / 100):.2f}\n'
           f'Seu empréstimo foi concedido!.')
