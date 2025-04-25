@@ -15,13 +15,10 @@ print('Escolha a opção que deseja converter o número digitado.\n'
 escolha = int(input('Digite a opção desejada: '))
 
 if escolha == 1:
-    bina = bin(num)
-    print(f'O número {num} em binário é => {bina}')
+    print(f'O número {num} em binário é => {bin(num)[2:]}') # O [2:] irá fatiar e fazer com que inicie a partir da 3°posição.
 elif escolha == 2:
-    octal = oct(num)
-    print(f'O número {num} em octal é => {octal}')
+    print(f'O número {num} em octal é => {oct(num}[2:]')
 elif escolha == 3:
-    hexa = hex(num)
-    print(f'O número {num} em hexadecimal é => {hexa}')
+    print(f'O número {num} em hexadecimal é => {hex(num)[2:]}') 
 else:
     print('Digite um número dentre as opções.')
