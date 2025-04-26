@@ -16,7 +16,7 @@ elif nota1 or nota2 > 10:
     print('Digite uma nota entre 0 e 10')
 elif media < 5.0:
     print(f'Média:{media:.2f}\nREPROVADO!')
-elif media >= 5.0 and media <= 6.9:
+elif media >= 5.0 and media < 7:             # Outra forma de fazer esse ELIF ==> elif 7 > media <= 5:
     print(f'Média:{media:.2f}\nRECUPERAÇÃO')
 else:
     print(f'Média:{media:.2f}\nAPROVADO')
