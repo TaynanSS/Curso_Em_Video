@@ -13,7 +13,7 @@ print('Iremos calcular seu IMC e informar o status que você está.\n')
 peso = float(input('Informe seu peso: '))
 altura = float(input('Informe sua altura: '))
 
-imc = peso / (altura * altura)
+imc = peso / (altura ** 2)
 
 if imc < 18.5:
     print(f'Peso: {peso:.2f}\nAltura: {altura:.2f}\nIMC: {imc:.2f}\nStatus: \033[1mAbaixo do Peso\033[m')
