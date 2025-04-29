@@ -29,7 +29,7 @@ elif escolha == 3:
     print(f'Valor do produto: {produto:.2f}'
           f'\nValor a ser pago: {produto:.2f}')
 elif escolha == 4:
-    juros = produto * (40 / 100)
+    juros = produto * (20 / 100)
     parcela = int(input('Escolha a quantidade de parcelas: '))
     print(f'Valor do produto: {produto:.2f}'
           f'\nValor a ser pago: {produto + juros:.2f}'
