@@ -5,9 +5,10 @@ maior = 0
 menor = 0
 for c in range(0, 7):
     ano = int(input('Digite seu ano de nascimento: '))
-    if ano < 21:
+    idade = 2025 - ano
+    if idade < 21:
         menor += 1
-    elif ano >= 21:
+    elif idade >= 21:
         maior += 1
 if maior == 0:
     print('\n' + f'Há {menor} menores de idade.')
