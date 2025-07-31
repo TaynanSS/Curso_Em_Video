@@ -13,10 +13,11 @@ for i in range(1,5):
     idade = int(input('Informe sua idade: '))
     sexo = str(input('Gênero (F/M): ')).upper().strip()
 
-    if sexo == 'F':    # Aqui já farei o filtro em mulheres abaixo de 20anos e coloco um contador sempre que houver outra.
-        if idade < 20:    
-            contM += 1    
+    if sexo == 'F' and idade < 20: :    # posso fazer o filtro dessa forma -> if sexo in 'Ff' and idade < 20       ELIMINANDO O .UPPER() 
+        contM += 1    # Aqui já farei o filtro em mulheres abaixo de 20anos e coloco um contador sempre que houver outra.
 
+
+    # posso fazer o filtro dessa forma -> if sexo in 'Mm' and idade > idadevelho
     if sexo == 'M' and idade > idadevelho:    # Na primeira repetição irá substituir o valor de "idadevelho" para o que entrou em "idade"
         idadevelho = idade        # caso entre outro valor acima do que está em "idadevelho", ele é substituído novamente.
         maisvelho = nome # Aqui salvará o último nome que passou por esse filtro.
