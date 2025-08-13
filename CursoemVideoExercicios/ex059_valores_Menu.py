@@ -11,15 +11,17 @@ from traceback import print_tb
 
 valor1 = float(input('Digite o primeiro valor: '))
 valor2 = float(input('Digite o segundo valor: '))
-print('-' * 5, ' MENU ','-' * 5)
-
 
 
 escolha = 0
-maior = 0
 
 while escolha != 5:
-    print('[1] Somar\n[2] Multiplicar\n[3] Maior\n[4] Novos números\n[5] Sair do programa\n')
+    print('-' * 5, ' MENU ', '-' * 5)
+    print('  [1] Somar\n'
+          '  [2] Multiplicar\n'
+          '  [3] Maior\n'
+          '  [4] Novos números\n'
+          '  [5] Sair do programa\n')
     escolha = int(input('Informe sua escolha: '))
     if escolha == 1:
         soma = valor1 + valor2
@@ -38,9 +40,14 @@ while escolha != 5:
             print(f'O maior valor: {maior}\n')
 
     if escolha == 4:
-        print('Informe novos números abaixo.')
+        print('\nInforme novos números abaixo.')
         valor1 = float(input('Digite o primeiro valor: '))
         valor2 = float(input('Digite o segundo valor: '))
 
     if escolha == 5:
         print('Programa encerrado.')
+
+    else:
+        print('Opção inválida. Tente novamente.\n')
+
+# NÃO TEVE MUITA DIFERENÇA ENTRE O MEU E O DO GUANABARA. Logo não irei colocar a versão dele.
